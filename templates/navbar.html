@@ -1,0 +1,23 @@
+<header class="main-header sticky-top">
+  <a class="logo" href="{% url 'home_view_url' %}">Logo</a>
+  <nav>
+    <ul class="nav__links">
+      <li class="nav__link"><a href="{% url 'home_view_url' %}">Главная</a></li>
+      <li class="nav__link"><a href="">Новости</a></li>
+      <li class="nav__link"><a href="">Новости</a></li>
+      <li class="nav__link"><a href="{% url 'contacts_view_url' %}">Контакты</a></li>
+    </ul>
+  </nav>
+  <ul class="nav__links-fa">
+    <div class="nav__searchbox">
+      <form action="{% url 'home_view_url' %}">
+        <input type="text" class="input" name="search">
+      </form>
+      <div class="nav__searchbtn">
+       <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div>
+    <!--<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+    <li><a href=""><i class="fa fa-user" aria-hidden="true"></i></a></li> -->
+  </ul>
+</header>
